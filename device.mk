@@ -755,6 +755,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     chre
 
+# Stock offline charging animation
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 include hardware/google/pixel/vibrator/drv2624/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
 include hardware/google/pixel/thermal/device.mk
