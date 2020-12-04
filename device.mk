@@ -478,7 +478,7 @@ PRODUCT_PACKAGES += \
     wificond \
     libwpa_client \
     netutils-wrapper-1.0 \
-    WifiOverlay
+    WifiOverlay2020
 
 LIB_NL := libnl_2
 PRODUCT_PACKAGES += $(LIB_NL)
