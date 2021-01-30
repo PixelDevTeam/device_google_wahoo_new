@@ -69,7 +69,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions (listed in the file) to be wiped under recovery.
-TARGET_RECOVERY_WIPE := device/google/wahoo/recovery.wipe
+TARGET_RECOVERY_WIPE := device/google/wahoo/rootdir/etc/recovery.wipe
 TARGET_RECOVERY_FSTAB := device/google/wahoo/rootdir/etc/fstab.hardware
 
 BOARD_AVB_ENABLE := true
@@ -104,7 +104,7 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR := device/google/wahoo/sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR := device/google/wahoo/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/wahoo/sepolicy/verizon
 
-TARGET_FS_CONFIG_GEN := device/google/wahoo/config.fs
+TARGET_FS_CONFIG_GEN := device/google/wahoo/configs/fs/config.fs
 
 QCOM_BOARD_PLATFORMS += msm8998
 BOARD_HAVE_BLUETOOTH_QCOM := true
