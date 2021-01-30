@@ -17,13 +17,9 @@
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-ifneq (,$(filter 27, $(PRODUCT_EXTRA_VNDK_VERSIONS)))
-    _vndk_test := true
-endif
+PRODUCT_PACKAGES += \
+    vndk_package
 
-ifeq (,$(_vndk_test))
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-endif
 PRODUCT_ACTIONABLE_COMPATIBLE_PROPERTY_DISABLE := true
 
 PRODUCT_PROPERTY_OVERRIDES += \
